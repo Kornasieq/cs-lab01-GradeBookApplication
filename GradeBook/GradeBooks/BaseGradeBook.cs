@@ -267,5 +267,9 @@ namespace GradeBook.GradeBooks
             
             return JsonConvert.DeserializeObject(json, gradebook);
         }
+        public int CountStudents()
+        {
+            return Students.Count();
+        }
     }
 }
